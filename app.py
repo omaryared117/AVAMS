@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st 
 import plotly.express as px 
 
-data_vehicle = pd.read_csv('~/proyecto5/vehicles_env/AVAMS/vehicles_us.csv')
+data_vehicle = pd.read_csv('/AVAMS/blob/main/vehicles_us.csv')
 
 st.header('my aplicacion web')
 
