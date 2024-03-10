@@ -12,7 +12,7 @@ his_button = st.button('construir un histograma')
 
 if his_button:
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
-    table = data_vehicle.pivot_table(index='type',columns='condition', values='model_year')
+    table = data_vehicle.pivot_table(index='model',columns='condition', values='model_year')
     fig = px.histogram(table)
     st.plotly_chart(fig, use_container_width=True)
 
